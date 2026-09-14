@@ -135,7 +135,4 @@ Front-End Developer
 * Responsive Web Design
 * Git & GitHub
 
-```
 
-**ملاحظة:** بعد ما نرفع المشروع، نستبدل روابط `Live Demo` و`GitHub Repository` بالروابط الحقيقية.
-```

@@ -1,0 +1,42 @@
+.search-bar .col-6,
+.search-bar .col-3 {
+  position: relative;
+}
+
+.search-bar .col-6 input:focus,
+.search-bar .col-3 input:focus,
+.search-bar .col-6 input:hover,
+.search-bar .col-3 input:hover {
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.142);
+}
+
+.search-bar .col-6 input,
+.search-bar .col-3 input {
+  background-color: var(--pg-color-card);
+}
+
+.search-bar .col-6 input,
+.search-bar .col-3 input,
+.search-bar .col-1 .btn {
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+.search-bar .col-6 .icon,
+.search-bar .col-3 .icon {
+  position: absolute;
+  font-size: 20px;
+  top: 7px;
+  left: 5px;
+}
+
+.search-bar .col-1 .btn {
+  font-size: 13px;
+  background-color: var(--pg-black);
+  color: white;
+}
+
+.search-bar .col-1 .btn:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.463);
+}

@@ -1,0 +1,46 @@
+/* header  */
+.shop-by-department .header .col a {
+  align-items: center;
+  text-decoration: none;
+}
+
+.shop-by-department .header .col h4 {
+  font-size: 18px;
+}
+
+/* header ## */
+
+/* card  */
+.shop-by-department .card {
+  border: none;
+  transition: all 0.3s;
+}
+
+.shop-by-department .card:hover {
+  transform: translateY(-5px);
+}
+
+@media (min-width: 992px) {
+  .shop-by-department .card .img img {
+    width: 50%;
+  }
+}
+
+.shop-by-department .card .img {
+  background-color: var(--pg-color-card);
+  border-radius: 12px;
+}
+
+/* card ## */
+
+@media (max-width: 555px) {
+  .shop-by-department .card h5 {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 555px) and (max-width: 767px) {
+  .shop-by-department .card h5 {
+    font-size: 12px;
+  }
+}

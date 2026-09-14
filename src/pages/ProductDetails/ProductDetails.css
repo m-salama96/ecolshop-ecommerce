@@ -1,0 +1,372 @@
+.product-details .img-small .card,
+.product-details .img-big .card {
+  background-color: var(--pg-color-card);
+}
+
+/* rating & wish / */
+.product-details .img-big .rating-wish {
+  position: relative;
+  left: 13px;
+  top: 5px;
+  align-items: center;
+  z-index: 2;
+}
+
+.product-details .img-big .rating-wish .col button {
+  background-color: white;
+  border-radius: 20px;
+  padding: 3px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+.product-details .img-big .rating-wish .col:last-child {
+  display: flex;
+  justify-content: end;
+}
+
+.product-details .img-big .rating-wish .col:last-child button {
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.product-details .img-big .rating-wish .raiting-icon {
+  color: orange;
+}
+
+/* rating & wish  ### / */
+
+/* Colors */
+
+.color-option {
+  width: 30px;
+  height: 30px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s ease;
+  padding: 0;
+}
+
+.color-option:hover {
+  transform: scale(1.1);
+  border-color: #000;
+  box-shadow: 0 0 10px #0000004d;
+}
+
+.color-option.active {
+  border: 2px solid #000;
+  outline: 2px solid #fff;
+  box-shadow: 0 0 0 3px #000;
+}
+
+/* Color values */
+
+.color-olive {
+  background-color: olive;
+}
+
+.color-black {
+  background-color: #000;
+}
+
+.color-white {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.color-brown {
+  background-color: brown;
+}
+
+/* Sizes */
+
+.size-option {
+  min-width: 45px;
+  height: 40px;
+  padding: 0 12px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.size-option:hover {
+  border-color: #000;
+  box-shadow: 0 0 10px #0000004d;
+  transform: scale(1.05);
+}
+
+.size-option.active {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+  box-shadow: 0 0 10px #00000033;
+}
+
+/* quantity  */
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.quantity-control button {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.quantity-control button:hover {
+  background-color: #e9e9e9;
+}
+
+.quantity-control span {
+  width: 50px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* add  */
+
+.product-details .add button {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.245);
+  transform: 0.3s;
+}
+
+.product-details .add button:hover,
+.product-details .add .active {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+/* add ## */
+
+/* you may  */
+.product-details .img-small .card,
+.product-details .img-big .card {
+  background-color: var(--pg-color-card);
+}
+
+/* rating & wish / */
+.product-details .img-big .rating-wish {
+  left: 13px;
+  top: 5px;
+  align-items: center;
+}
+
+.product-details .img-big .rating-wish .col button {
+  background-color: white;
+  border-radius: 20px;
+  padding: 3px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+.product-details .img-big .rating-wish .col:last-child {
+  display: flex;
+  justify-content: end;
+}
+
+.product-details .img-big .rating-wish .col:last-child button {
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.product-details .img-big .rating-wish .raiting-icon {
+  color: orange;
+}
+
+/* rating & wish  ### / */
+
+/* Colors */
+
+.color-option {
+  width: 30px;
+  height: 30px;
+  border: 2px solid transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s ease;
+  padding: 0;
+}
+
+.color-option:hover {
+  transform: scale(1.1);
+  border-color: #000;
+  box-shadow: 0 0 10px #0000004d;
+}
+
+.color-option.active {
+  border: 2px solid #000;
+  outline: 2px solid #fff;
+  box-shadow: 0 0 0 3px #000;
+}
+
+/* Color values */
+
+.color-olive {
+  background-color: olive;
+}
+
+.color-black {
+  background-color: #000;
+}
+
+.color-white {
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.color-brown {
+  background-color: brown;
+}
+
+/* Sizes */
+
+.size-option {
+  min-width: 45px;
+  height: 40px;
+  padding: 0 12px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.size-option:hover {
+  border-color: #000;
+  box-shadow: 0 0 10px #0000004d;
+  transform: scale(1.05);
+}
+
+.size-option.active {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+  box-shadow: 0 0 10px #00000033;
+}
+
+/* quantity  */
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.quantity-control button {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background-color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.quantity-control button:hover {
+  background-color: #e9e9e9;
+}
+
+.quantity-control span {
+  width: 50px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* add  */
+
+.product-details .add button {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.245);
+  transform: 0.3s;
+}
+
+.product-details .add button:hover,
+.product-details .add .active {
+  background-color: black;
+  color: white;
+}
+
+/* add ## */
+/* header  */
+.you-may .header .col a {
+  align-items: center;
+  text-decoration: none;
+}
+
+.you-may .header .col h4 {
+  font-size: 18px;
+}
+
+/* header ## */
+
+/* card  */
+.you-may .card {
+  border: none;
+  transition: all 0.3s;
+}
+
+.you-may .card:hover {
+  transform: translateY(-5px);
+}
+
+.you-may .card img {
+  background-color: var(--pg-color-card);
+}
+/* card ## */
+
+/* raiting & wish  */
+
+.you-may .card .rating-wish {
+  left: 13px;
+  top: 17px;
+  align-items: center;
+}
+
+.you-may .card .rating-wish .col button {
+  background-color: white;
+  border-radius: 20px;
+  padding: 3px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+.you-may .card .rating-wish .col:last-child {
+  display: flex;
+  justify-content: end;
+}
+
+.you-may .card .rating-wish .col:last-child button {
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.you-may .card .rating-wish .raiting-icon {
+  color: orange;
+}
+
+/* raiting & wish ## */
+
+/* you may ## */

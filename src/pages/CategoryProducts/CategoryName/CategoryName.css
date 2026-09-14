@@ -1,0 +1,25 @@
+.category-name {
+  background-color: var(--pg-color-card);
+}
+
+.category-name .col .category {
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.147);
+  display: flex;
+  align-items: center;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.category-name .col .category:hover {
+  transform: translateY(-3px);
+}
+
+.category-name .col .category .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(73, 161, 219, 0.247);
+  border-radius: 50%;
+}

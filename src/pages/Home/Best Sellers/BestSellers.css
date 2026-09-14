@@ -1,0 +1,60 @@
+/* header  */
+.best-sellers .header .col a {
+  align-items: center;
+  text-decoration: none;
+}
+
+.best-sellers .header .col h4 {
+  font-size: 18px;
+}
+
+/* header ## */
+
+/* card  */
+.best-sellers .card {
+  border: none;
+  transition: all 0.3s;
+}
+
+.best-sellers .card:hover {
+  transform: translateY(-5px);
+}
+
+.best-sellers .card img {
+  background-color: var(--pg-color-card);
+}
+/* card ## */
+
+/* raiting & wish  */
+
+.best-sellers .card .rating-wish {
+  left: 13px;
+  top: 17px;
+  align-items: center;
+}
+
+.best-sellers .card .rating-wish .col button {
+  background-color: white;
+  border-radius: 20px;
+  padding: 3px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+.best-sellers .card .rating-wish .col:last-child {
+  display: flex;
+  justify-content: end;
+}
+
+.best-sellers .card .rating-wish .col:last-child button {
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.best-sellers .card .rating-wish .raiting-icon {
+  color: orange;
+}
+
+/* raiting & wish ## */

@@ -1,0 +1,116 @@
+.footer .container h4 {
+  font-size: 20px;
+  color: white;
+}
+
+.footer .container p,
+.footer .container ul li a {
+  color: var(--p-color);
+}
+
+.footer .container ul li {
+  transition: all 0.3s;
+}
+
+.footer .container ul li:hover {
+  transform: translateY(-3px);
+}
+
+.footer .container ul li:hover a {
+  color: white !important;
+}
+
+.footer .accordion-item,
+.footer .accordion-button,
+.footer .accordion-collapse,
+.footer .accordion-body {
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: white !important;
+  margin-top: 2px;
+  padding: 2px 0;
+}
+
+.accordion-button::after,
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0) invert(1);
+}
+
+/* form  */
+
+.footer .container .row .col-12 form {
+  width: 60%;
+}
+
+.footer .container .row .col-12 input {
+  border-radius: 20px;
+  height: 35px;
+  border: none;
+  padding: 5px 5px 5px 10px;
+  width: 100%;
+}
+
+.footer .container .row .col-12 input:focus {
+  outline: none;
+}
+
+/* button search  */
+
+.footer .container .row .col-12 .btn {
+  padding: 6px 10px;
+  position: absolute;
+  right: -20px;
+  top: -1px;
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.126);
+}
+
+.footer .container .row .col-12 .btn:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.189);
+  background-color: rgb(0, 0, 0) !important;
+}
+
+/* button search ## */
+
+/* form  */
+
+/* Follow us */
+
+.footer .row .col-12 .accordion .accordion-body .face:hover,
+.footer .row .col-12 .face:hover,
+.footer .row .col-12 .accordion .accordion-body .twitt:hover,
+.footer .row .col-12 .twitt:hover,
+.footer .row .col-12 .accordion .accordion-body .yout:hover,
+.footer .row .col-12 .yout:hover,
+.footer .row .col-12 .accordion .accordion-body .inst:hover,
+.footer .row .col-12 .inst:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.189);
+  border-radius: 50%;
+}
+
+.footer .row .col-12 .accordion .accordion-body .face,
+.footer .row .col-12 .face {
+  color: rgb(27 110 255 / 82%) !important;
+}
+
+.footer .row .col-12 .accordion .accordion-body .inst,
+.footer .row .col-12 .inst {
+  color: rgba(244, 27, 255, 0.819) !important;
+}
+
+.footer .row .col-12 .accordion .accordion-body .twitt,
+.footer .row .col-12 .twitt {
+  color: rgba(27, 179, 255, 0.819) !important;
+}
+
+.footer .row .col-12 .accordion .accordion-body .yout,
+.footer .row .col-12 .yout {
+  color: rgba(255, 27, 27, 0.819) !important;
+}
+
+/* Follow us ## */
+
+.footer .row:last-child a {
+  color: white;
+}

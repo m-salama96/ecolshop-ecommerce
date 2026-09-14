@@ -1,0 +1,50 @@
+/* card  */
+.products-grid .card {
+  border: none;
+  transition: all 0.3s;
+}
+
+.products-grid .card:hover {
+  transform: translateY(-5px);
+}
+
+.products-grid .card img {
+  background-color: var(--pg-color-card);
+}
+/* card ## */
+
+/* raiting & wish  */
+
+.products-grid .card .rating-wish {
+  left: 13px;
+  top: 17px;
+  align-items: center;
+}
+
+.products-grid .card .rating-wish .col button {
+  background-color: white;
+  border-radius: 20px;
+  padding: 3px 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.11);
+}
+
+.products-grid .card .rating-wish .col:last-child {
+  display: flex;
+  justify-content: end;
+}
+
+.products-grid .card .rating-wish .col:last-child button {
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.products-grid .card .rating-wish .raiting-icon {
+  color: orange;
+}
+
+
+
+/* raiting & wish ## */

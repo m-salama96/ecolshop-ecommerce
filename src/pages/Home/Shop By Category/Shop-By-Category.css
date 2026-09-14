@@ -1,0 +1,12 @@
+.shop-by-category .card {
+  transition: all 0.3s;
+  background-color: var(--pg-color-card);
+}
+
+.shop-by-category .card:hover {
+  transform: translateY(-5px);
+}
+
+.shop-by-category .card img {
+  border-radius: 50%;
+}

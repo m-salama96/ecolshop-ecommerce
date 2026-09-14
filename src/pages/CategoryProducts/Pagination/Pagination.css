@@ -1,0 +1,21 @@
+.pagination .active {
+  background-color: var(--pg-black);
+  color: white;
+  border: none;
+}
+
+.pagination ul a {
+  border-radius: 12px;
+  margin: 0 2px;
+  padding: 3px 10px;
+}
+
+.pagination ul a {
+  color: black;
+  transition: all 0.3s;
+}
+
+.pagination ul a:hover {
+  background-color: var(--pg-black);
+  color: white;
+}

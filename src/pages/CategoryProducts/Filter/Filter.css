@@ -1,0 +1,23 @@
+.filter {
+  background-color: var(--pg-color-card);
+}
+
+.filter .container {
+  background-color: white;
+  border-radius: 9px;
+}
+
+.filter .container .col-12 .form-select {
+  height: 35px;
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.filter .container .col-12 .form-select option {
+  cursor: pointer;
+}
+
+.filter .container .col-12 .btn {
+  background-color: var(--pg-black);
+  color: white;
+}

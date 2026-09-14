@@ -1,0 +1,115 @@
+.check-out .row .left {
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.19);
+}
+
+.check-out .row .right .row:first-child {
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.19);
+}
+
+/* cart  */
+
+.check-out .row .right .row .body {
+  max-height: 270px;
+  overflow: hidden;
+  overflow-y: auto;
+  border-top: 1px solid rgba(0, 0, 0, 0.108);
+}
+
+.check-out .row .right .row .body .quantity-control {
+  border: none;
+}
+
+.check-out .row .right .row .body .cart-prodct img {
+  background-color: var(--pg-color-card);
+  border-radius: 12px;
+}
+
+.check-out .row label:first-child:not([for="ZIPCode"])::after {
+  content: "*";
+  color: red;
+}
+
+/* cart summary */
+
+.check-out .row .right .row .cart-summary {
+  border-top: 1px solid rgba(0, 0, 0, 0.147);
+}
+
+/* featuers  */
+
+.check-out .featuers .row {
+  border: 1px solid rgba(0, 0, 0, 0.11);
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.182);
+  padding: 0;
+}
+
+@media (max-width: 992px) {
+  .check-out .featuers .row .col-3 .cardfea {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.check-out .featuers .row .col-3 .icon {
+  font-size: 27px;
+  justify-content: center;
+}
+
+@media (max-width: 450px) {
+  .check-out .featuers .row .col-3 .icon {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 450px) {
+  .check-out .featuers .row .col-3 .icon {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 992px) {
+  .check-out .featuers .row .col-3 .icon {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .check-out .featuers .row .col-3 .text h5 {
+    font-size: 7px;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 992px) {
+  .check-out .featuers .row .col-3 .text h5 {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .check-out .featuers .row .col-3 .text h5 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 450px) {
+  .check-out .featuers .row .col-3 .text p {
+    font-size: 7px;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 992px) {
+  .check-out .featuers .row .col-3 .text p {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+  .check-out .featuers .row .col-3 .text p {
+    font-size: 13px;
+  }
+}
+/* featuers ### */

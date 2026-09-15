@@ -1,10 +1,6 @@
 import "./Pagination.css";
 
-export default function Pagination({
-  currentPage,
-  setCurrentPage,
-  totalPages,
-}) {
+export default function Pagination({ currentPage, totalPages }) {
   const startPage = Math.max(1, currentPage - 1);
   const endPage = Math.min(totalPages, startPage + 3);
 

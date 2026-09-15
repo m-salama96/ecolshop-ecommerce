@@ -174,12 +174,6 @@ export default function CategoryProducts() {
           />
         </>
       )}
-
-      <Pagination
-        currentPage={currentPage}
-        setCurrentPage={setCurrentPage}
-        totalPages={totalPages}
-      />
     </>
   );
 }

@@ -19,7 +19,12 @@ export default function Pagination({
         <ul className="pagination justify-content-center">
           <a
             className={`page-link ${currentPage === 1 ? "disabled" : ""}`}
-            onClick={() => setCurrentPage(currentPage - 1)}
+            onClick={() => {
+              const params = new URLSearchParams(window.location.search);
+              params.set("page", currentPage - 1);
+
+              window.location.href = `/shop?${params.toString()}`;
+            }}
           >
             Previous
           </a>
@@ -27,7 +32,12 @@ export default function Pagination({
             <li key={page} className="page-item">
               <a
                 className={`page-link ${currentPage === page ? "active" : ""}`}
-                onClick={() => setCurrentPage(page)}
+                onClick={() => {
+                  const params = new URLSearchParams(window.location.search);
+                  params.set("page", page);
+
+                  window.location.href = `/shop?${params.toString()}`;
+                }}
               >
                 {page}
               </a>
@@ -36,7 +46,12 @@ export default function Pagination({
 
           <a
             className={`page-link ${currentPage === totalPages ? "disabled" : ""}`}
-            onClick={() => setCurrentPage(currentPage + 1)}
+            onClick={() => {
+              const params = new URLSearchParams(window.location.search);
+              params.set("page", currentPage + 1);
+
+              window.location.href = `/shop?${params.toString()}`;
+            }}
           >
             Next
           </a>

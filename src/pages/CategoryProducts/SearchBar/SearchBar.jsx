@@ -47,10 +47,15 @@ export default function SearchBar({
               className="btn p-1 px-2"
               type="submit"
               value="Search"
+              disabled={search.trim() === ""}
               onClick={() => {
-                setSearchValue(search);
                 setSelectedCategory("All Products");
                 setCurrentPage(1);
+
+                const params = new URLSearchParams();
+                params.set("search", search);
+
+                window.location.href = `/shop?${params.toString()}`;
               }}
             />
           </div>

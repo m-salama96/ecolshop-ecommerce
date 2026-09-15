@@ -8,6 +8,7 @@
   border-radius: 12px;
   margin: 0 2px;
   padding: 3px 10px;
+  cursor: pointer;
 }
 
 .pagination ul a {

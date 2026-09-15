@@ -1,11 +1,22 @@
 /* header  */
-.shop-by-department .header .col a {
-  align-items: center;
+@media (max-width: 388px) {
+  .shop-by-department .header .col-8 h2 {
+    font-size: 22px !important;
+  }
+}
+
+.shop-by-department .header .col-4 a {
   text-decoration: none;
 }
 
-.shop-by-department .header .col h4 {
+.shop-by-department .header .col-4 h4 {
   font-size: 18px;
+}
+
+@media (max-width: 388px) {
+  .shop-by-department .header .col-4 h4 {
+    font-size: 18px;
+  }
 }
 
 /* header ## */

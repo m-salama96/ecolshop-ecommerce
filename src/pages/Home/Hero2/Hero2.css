@@ -10,13 +10,13 @@
 
 @media (max-width: 767px) {
   .hero2 .row .col-7 p {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 
 @media (max-width: 500px) {
   .hero2 .row .col-7 p {
-    font-size: 8px;
+    font-size: 12px;
   }
 }
 
@@ -34,7 +34,7 @@
 }
 @media (max-width: 500px) {
   .hero2 .row .col-7 h2 {
-    font-size: 13px;
+    font-size: 17px;
     margin: 0;
   }
 }
@@ -48,5 +48,11 @@
 @media (max-width: 500px) {
   .hero2 .row .col-7 .btn {
     font-size: 8px;
+  }
+}
+
+@media (max-width: 767px) {
+  .hero2 .row .col-5 img {
+    min-height: 200px;
   }
 }

@@ -129,6 +129,8 @@ function Filter({
                 setSelectedRating("all");
                 setBrandFilter("all");
                 setCurrentPage(1);
+
+                window.location.href = "/shop";
               }}
             />
           </div>

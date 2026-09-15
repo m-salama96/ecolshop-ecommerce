@@ -16,7 +16,11 @@ function Home() {
   }
 
   if (error) {
-    return <h2 className="text-center">Product not found</h2>;
+    return (
+      <h2 style={{ minHeight: "88vh" }} className=" text-center py-5">
+        Product not found
+      </h2>
+    );
   }
 
   return (

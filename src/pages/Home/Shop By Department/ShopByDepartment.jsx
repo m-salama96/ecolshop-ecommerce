@@ -42,11 +42,11 @@ function ShopByDepartment() {
       <div className="container">
         {/* header  */}
         <div className="row header">
-          <div className="col">
+          <div className="col-8">
             <h2>Shop By Department</h2>
           </div>
-          <div className="col d-flex align-items-center justify-content-end">
-            <Link to="/shop" className="d-flex">
+          <div className="col-4 d-flex align-items-center justify-content-end">
+            <Link to="/shop" className="d-flex align-items-center">
               <h4 className="m-0">View All</h4>
               <span className="ps-1 d-flex">
                 <MdOutlineTrendingFlat />

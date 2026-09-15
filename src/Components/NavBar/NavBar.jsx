@@ -87,7 +87,7 @@ function NavBar() {
             </span>
           </button>
 
-          <Link className="navbar-brand fw-bold" to="/">
+          <Link className="navbar-brand fw-bold" href="/">
             Ecolshop
           </Link>
         </div>
@@ -97,115 +97,115 @@ function NavBar() {
           <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
             {/* Home */}
             <li className="nav-item">
-              <Link
-                to="/"
+              <a
+                href="/"
                 className={`nav-link ${isActive("/") ? "active" : ""}`}
                 onClick={closeNavbar}
               >
                 Home
-              </Link>
+              </a>
             </li>
 
             {/* All Products */}
             <li className="nav-item">
-              <Link
-                to="/shop"
+              <a
+                href="/shop"
                 className={`nav-link ${isActive("/shop") ? "active" : ""}`}
                 onClick={closeNavbar}
               >
                 All Products
-              </Link>
+              </a>
             </li>
 
             {/* Women */}
             <li className="nav-item">
-              <Link
-                to="/shop?category=womens-dresses"
+              <a
+                href="/shop?category=womens-dresses"
                 className={`nav-link ${
                   isActive("/shop", "womens-dresses") ? "active" : ""
                 }`}
                 onClick={closeNavbar}
               >
                 Women
-              </Link>
+              </a>
             </li>
 
             {/* Man */}
             <li className="nav-item">
-              <Link
-                to="/shop?category=mens-shirts"
+              <a
+                href="/shop?category=mens-shirts"
                 className={`nav-link ${
                   isActive("/shop", "mens-shirts") ? "active" : ""
                 }`}
                 onClick={closeNavbar}
               >
                 Man
-              </Link>
+              </a>
             </li>
 
             {/* Groceries */}
             <li className="nav-item">
-              <Link
-                to="/shop?category=groceries"
+              <a
+                href="/shop?category=groceries"
                 className={`nav-link ${
                   isActive("/shop", "groceries") ? "active" : ""
                 }`}
                 onClick={closeNavbar}
               >
                 Groceries
-              </Link>
+              </a>
             </li>
 
             {/* Electronics */}
             <li className="nav-item">
-              <Link
-                to="/shop?category=laptops"
+              <a
+                href="/shop?category=laptops"
                 className={`nav-link ${
                   isActive("/shop", "laptops") ? "active" : ""
                 }`}
                 onClick={closeNavbar}
               >
                 Electronics
-              </Link>
+              </a>
             </li>
 
             {/* Sports */}
             <li className="nav-item">
-              <Link
-                to="/shop?category=sports-accessories"
+              <a
+                href="/shop?category=sports-accessories"
                 className={`nav-link ${
                   isActive("/shop", "sports-accessories") ? "active" : ""
                 }`}
                 onClick={closeNavbar}
               >
                 Sports
-              </Link>
+              </a>
             </li>
 
             {/* Beauty */}
             <li className="nav-item">
-              <Link
-                to="/shop?category=beauty"
+              <a
+                href="/shop?category=beauty"
                 className={`nav-link ${
                   isActive("/shop", "Beauty") ? "active" : ""
                 }`}
                 onClick={closeNavbar}
               >
                 Beauty
-              </Link>
+              </a>
             </li>
 
             {/* Travel */}
             <li className="nav-item">
-              <Link
-                to="/shop?category=Fragrances"
+              <a
+                href="/shop?category=Fragrances"
                 className={`nav-link ${
                   isActive("/shop", "Fragrances") ? "active" : ""
                 }`}
                 onClick={closeNavbar}
               >
                 Fragrances
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
@@ -214,9 +214,9 @@ function NavBar() {
         <div className="nav-icon d-flex">
           {/* Search */}
           <span className="me-1 fs-5">
-            <Link to="/shop?search=true">
+            <a href="/shop?search=true">
               <CiSearch className="mb-1" />
-            </Link>
+            </a>
           </span>
 
           {/* User */}
@@ -234,20 +234,20 @@ function NavBar() {
 
           {/* Wishlist */}
           <span className="me-1 fs-5 position-relative">
-            <Link to="/wishlist">
+            <a href="/wishlist">
               <CiHeart className="mb-1" />
 
               <span className="number">{wishCont}</span>
-            </Link>
+            </a>
           </span>
 
           {/* Cart */}
           <span className="me-1 fs-5 position-relative">
-            <Link to="/cart" className="d-flex justify-content-center">
+            <a href="/cart" className="d-flex justify-content-center">
               <IoCartOutline />
 
               <span className="number">{cartCont}</span>
-            </Link>
+            </a>
           </span>
         </div>
       </div>

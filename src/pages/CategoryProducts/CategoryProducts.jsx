@@ -15,13 +15,17 @@ export default function CategoryProducts() {
 
   const category = searchParams.get("category");
 
+  const pageFromUrl = Number(searchParams.get("page")) || 1;
+
+  const searchFromUrl = searchParams.get("search") || "";
+
   const focusSearch = searchParams.get("search") === "true";
 
   // search Ber
 
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState(searchFromUrl);
 
-  const [searchValue, setSearchValue] = useState("");
+  const [searchValue, setSearchValue] = useState(searchFromUrl);
 
   // CategoryName
   const [selectedCategory, setSelectedCategory] = useState(
@@ -29,12 +33,12 @@ export default function CategoryProducts() {
   );
 
   // pagination
-  const [currentPage, setCurrentPage] = useState(1);
+
+  const [currentPage, setCurrentPage] = useState(pageFromUrl);
 
   useEffect(() => {
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setSelectedCategory(category || "All Products");
-    setCurrentPage(1);
   }, [category]);
 
   // price filter
@@ -119,7 +123,11 @@ export default function CategoryProducts() {
   }
 
   if (error) {
-    return <h2 className="text-center">Product not found</h2>;
+    return (
+      <h2 style={{ minHeight: "88vh" }} className=" text-center py-5">
+        Product not found
+      </h2>
+    );
   }
 
   return (
@@ -151,7 +159,22 @@ export default function CategoryProducts() {
         setCurrentPage={setCurrentPage}
       />
 
-      <ProductsGrid products={currentProducts} />
+      {filterByBrand.length === 0 ? (
+        <h2 style={{ minHeight: "60vh" }} className="text-center py-5">
+          Product not found
+        </h2>
+      ) : (
+        <>
+          <ProductsGrid products={currentProducts} />
+
+          <Pagination
+            currentPage={currentPage}
+            setCurrentPage={setCurrentPage}
+            totalPages={totalPages}
+          />
+        </>
+      )}
+
       <Pagination
         currentPage={currentPage}
         setCurrentPage={setCurrentPage}

@@ -36,7 +36,7 @@ export default function Footer() {
               <br /> Our New Offers
             </h4>
             <p>Subscribe to our newsletter and get 10% off your first order.</p>
-            <form action="" className="position-relative mt-2">
+            <form className="position-relative mt-2 w-75">
               <input type="text" placeholder="Enter Your Email"></input>
               <button type="submet" className="btn rounded-pill bg-dark ">
                 Subscribe

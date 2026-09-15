@@ -14,8 +14,6 @@ import {
   FaTruck,
 } from "react-icons/fa";
 
-
-
 const category = [
   { id: uuidv4(), icon: <FaChair />, title: "All Products" },
   { id: uuidv4(), icon: <FaShoppingBasket />, title: "Groceries" },
@@ -42,6 +40,12 @@ export default function CategoryName({
         setSelectedCategory(e.title);
         setSearchValue("");
         setCurrentPage(1);
+
+        if (e.title === "All Products") {
+          window.location.href = "/shop";
+        } else {
+          window.location.href = `/shop?category=${e.title.toLowerCase()}`;
+        }
       }}
     >
       <div className="category d-flex p-1">

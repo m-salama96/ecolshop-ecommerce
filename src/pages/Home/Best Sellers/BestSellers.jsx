@@ -18,7 +18,7 @@ import "swiper/css";
 import { Link } from "react-router-dom";
 
 function BestSellers() {
-  const category = ["vehicle", "sunglasses", "skin-care", "mens-watches"];
+  const category = ["laptops", "sunglasses", "skin-care", "mens-watches"];
 
   // Products
   const { products } = useContext(ProductContext);
@@ -86,19 +86,16 @@ function BestSellers() {
         {/* Product Info */}
         <div className="card-body">
           <p className="text-black-50">{product.category}</p>
-
           <h5 className="card-title">
             {product.title.length > 10
-              ? product.title.slice(0, 25) + "..."
+              ? product.title.slice(0, 16) + "..."
               : product.title}
           </h5>
-
           <p className="card-text text-black-50">
-            {product.description.length > 30
-              ? product.description.slice(0, 30) + "..."
+            {product.description.length > 17
+              ? product.description.slice(0, 25) + "..."
               : product.description}
           </p>
-
           <h6 className="pt-2">$ {product.price}</h6>
         </div>
       </div>

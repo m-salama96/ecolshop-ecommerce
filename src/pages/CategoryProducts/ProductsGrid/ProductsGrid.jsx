@@ -69,13 +69,17 @@ export default function ProductsGrid({ products }) {
 
                 {/* Product Info */}
                 <div className="card-body">
-                  <p className="text-black-50">{product.category}</p>
-                  <h5 className="card-title">
+                  <p className="text-black-50">
+                    {product.category.length > 12
+                      ? product.category.replace("-", " ").slice(0, 12) + ".."
+                      : product.category}
+                  </p>
+                  <h5 className="card-title m-0">
                     {product.title.length > 10
-                      ? product.title.slice(0, 16) + "..."
+                      ? product.title.slice(0, 13) + "..."
                       : product.title}
                   </h5>
-                  <p className="card-text text-black-50">
+                  <p className="card-text text-black-50 py-1">
                     {product.description.length > 17
                       ? product.description.slice(0, 25) + "..."
                       : product.description}

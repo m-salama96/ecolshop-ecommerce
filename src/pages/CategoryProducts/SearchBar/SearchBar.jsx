@@ -6,7 +6,6 @@ import { useEffect, useRef } from "react";
 export default function SearchBar({
   search,
   setSearch,
-  setSearchValue,
   setSelectedCategory,
   setCurrentPage,
   focusSearch,

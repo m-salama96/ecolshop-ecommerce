@@ -1,7 +1,7 @@
 import "./NavBar.css";
 
 import { useState, useContext, useEffect } from "react";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../../firebase";
@@ -87,9 +87,9 @@ function NavBar() {
             </span>
           </button>
 
-          <Link className="navbar-brand fw-bold" href="/">
+          <a className="navbar-brand fw-bold" href="/">
             Ecolshop
-          </Link>
+          </a>
         </div>
 
         {/* Navbar Links */}
@@ -214,7 +214,7 @@ function NavBar() {
         <div className="nav-icon d-flex">
           {/* Search */}
           <span className="me-1 fs-5">
-            <a href="/shop?search=true">
+            <a href="/shop?focus=true">
               <CiSearch className="mb-1" />
             </a>
           </span>

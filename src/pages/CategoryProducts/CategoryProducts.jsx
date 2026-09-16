@@ -7,6 +7,7 @@ import { useContext, useState, useMemo, useEffect } from "react";
 import { ProductContext } from "../../Context/ProductContext";
 import Loading from "../../Components/Loading/Loading";
 import { useSearchParams } from "react-router-dom";
+import { IoArrowDownOutline } from "react-icons/io5";
 
 export default function CategoryProducts() {
   const { products, error, loading } = useContext(ProductContext);
@@ -19,7 +20,7 @@ export default function CategoryProducts() {
 
   const searchFromUrl = searchParams.get("search") || "";
 
-  const focusSearch = searchParams.get("search") === "true";
+  const focusSearch = searchParams.get("focus") === "true";
 
   // search Ber
 
@@ -140,24 +141,85 @@ export default function CategoryProducts() {
         setCurrentPage={setCurrentPage}
         focusSearch={focusSearch}
       />
-      <CategoryName
-        setSelectedCategory={setSelectedCategory}
-        setSearchValue={setSearchValue}
-        setCurrentPage={setCurrentPage}
-      />
+      {/* Categories - Mobile */}
+      <div className="d-lg-none">
+        <div className="container py-2">
+          <button
+            className="btn btn-dark w-100"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#categoriesCollapse"
+            aria-expanded="false"
+            aria-controls="categoriesCollapse"
+          >
+            Categories
+          </button>
 
-      <Filter
-        setSearchValue={setSearchValue}
-        setSelectedCategory={setSelectedCategory}
-        selectedCategory={selectedCategory}
-        setSelectedPrice={setPriceRange}
-        priceRange={priceRange}
-        selectedRating={selectedRating}
-        setSelectedRating={setSelectedRating}
-        brandFilter={brandFilter}
-        setBrandFilter={setBrandFilter}
-        setCurrentPage={setCurrentPage}
-      />
+          <div className="collapse" id="categoriesCollapse">
+            <CategoryName
+              setSelectedCategory={setSelectedCategory}
+              setSearchValue={setSearchValue}
+              setCurrentPage={setCurrentPage}
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Categories - Desktop */}
+      <div className="d-none d-lg-block ">
+        <CategoryName
+          setSelectedCategory={setSelectedCategory}
+          setSearchValue={setSearchValue}
+          setCurrentPage={setCurrentPage}
+        />
+      </div>
+
+      {/* Filters - Mobile */}
+      <div className="d-lg-none ">
+        <div className="container py-2 ">
+          <button
+            className="btn btn-dark w-100"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#filtersCollapse"
+            aria-expanded="false"
+            aria-controls="filtersCollapse"
+          >
+            Filters
+          </button>
+
+          <div className="collapse" id="filtersCollapse">
+            <Filter
+              setSearchValue={setSearchValue}
+              setSelectedCategory={setSelectedCategory}
+              selectedCategory={selectedCategory}
+              setSelectedPrice={setPriceRange}
+              priceRange={priceRange}
+              selectedRating={selectedRating}
+              setSelectedRating={setSelectedRating}
+              brandFilter={brandFilter}
+              setBrandFilter={setBrandFilter}
+              setCurrentPage={setCurrentPage}
+            />
+          </div>
+        </div>
+      </div>
+
+      {/* Filters - Desktop */}
+      <div className="d-none d-lg-block">
+        <Filter
+          setSearchValue={setSearchValue}
+          setSelectedCategory={setSelectedCategory}
+          selectedCategory={selectedCategory}
+          setSelectedPrice={setPriceRange}
+          priceRange={priceRange}
+          selectedRating={selectedRating}
+          setSelectedRating={setSelectedRating}
+          brandFilter={brandFilter}
+          setBrandFilter={setBrandFilter}
+          setCurrentPage={setCurrentPage}
+        />
+      </div>
 
       {filterByBrand.length === 0 ? (
         <h2 style={{ minHeight: "60vh" }} className="text-center py-5">

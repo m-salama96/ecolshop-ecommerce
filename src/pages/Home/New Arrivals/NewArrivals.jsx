@@ -103,13 +103,13 @@ function NewArrivals() {
           />
         </Link>
         <div className="card-body">
-          <p className="text-black-50">{product.category}</p>
-          <h5 className="card-title">
+          <p className="text-black-50">{product.category.replace("-", " ")}</p>
+          <h5 className="card-title m-0">
             {product.title.length > 10
               ? product.title.slice(0, 16) + "..."
               : product.title}
           </h5>
-          <p className="card-text text-black-50">
+          <p className="card-text text-black-50 py-1">
             {product.description.length > 17
               ? product.description.slice(0, 25) + "..."
               : product.description}

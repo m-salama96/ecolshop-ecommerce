@@ -228,14 +228,23 @@ export default function Footer() {
                 >
                   <div className="accordion-body">
                     <ul>
-                      <li className="my-2 ">
+                      <li
+                        className="my-2 "
+                        onClick={() => {
+                          if (user) {
+                            navigate("/profile");
+                          } else {
+                            navigate("/login");
+                          }
+                        }}
+                      >
                         <a href="#">My Account</a>
                       </li>
                       <li className="my-2 ">
                         <a href="#">Order Tracking</a>
                       </li>
                       <li className="my-2 ">
-                        <a href="#">Wishlist</a>
+                        <a href="/wishlist">Wishlist</a>
                       </li>
                       <li className="my-2 ">
                         <a href="#">Support Center</a>
@@ -268,8 +277,8 @@ export default function Footer() {
                 <li className="my-2 ">
                   <a href="#">Order Tracking</a>
                 </li>
-                <li className="my-2 " onClick={() => navigate("/wishlist")}>
-                  <a href="#">Wishlist</a>
+                <li className="my-2 ">
+                  <a href="/wishlist">Wishlist</a>
                 </li>
                 <li className="my-2 ">
                   <a href="#">Support Center</a>

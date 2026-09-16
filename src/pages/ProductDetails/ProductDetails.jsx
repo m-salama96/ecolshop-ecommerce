@@ -119,7 +119,7 @@ function ProductDetails() {
           {/* Rating + Wishlist */}
           <div className="row rating-wish d-flex position-absolute w-100">
             {/* Rating */}
-            <div className="col">
+            <div className="col px-2">
               <button type="button">
                 <FaStar className="raiting-icon me-1" />
                 <p>{relatedProduct.rating}</p>
@@ -127,7 +127,7 @@ function ProductDetails() {
             </div>
 
             {/* Wishlist */}
-            <div className="col d-flex justify-content-end">
+            <div className="col d-flex justify-content-end px-2">
               <button
                 type="button"
                 onClick={() => handleWishlist(relatedProduct)}
@@ -283,7 +283,7 @@ function ProductDetails() {
                 ))}
               </div>
             </div>
-           {/* Size  */}
+            {/* Size  */}
             <div className="size py-2">
               <h6>Size: {selectedSize}</h6>
 
@@ -322,7 +322,7 @@ function ProductDetails() {
                 +
               </button>
             </div>
-          {/* Add / Buy  */}
+            {/* Add / Buy  */}
             <div className="add my-3">
               <div className="row text-center g-2">
                 {/* Add To Cart */}
@@ -376,18 +376,18 @@ function ProductDetails() {
           <div className="container">
             {/* Header */}
             <div className="row header">
-              <div className="col">
-                <h3>You May Also Like</h3>
+              <div className="col-7">
+                <h3 className="fs-5">You May Also Like</h3>
               </div>
 
-              <div className="col d-flex align-items-center justify-content-end">
+              <div className="col-5 d-flex align-items-center justify-content-end">
                 <Link
                   to={`/shop?category=${product.category}`}
                   className="d-flex"
                 >
-                  <h4>View All</h4>
+                  <h4 className="fs-6">View All</h4>
 
-                  <span className="ps-1 d-flex">
+                  <span className="ps-1 d-flex align-items-center">
                     <MdOutlineTrendingFlat />
                   </span>
                 </Link>

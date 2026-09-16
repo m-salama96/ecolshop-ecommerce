@@ -13,6 +13,14 @@
 }
 /* card ## */
 
+.products-grid .card h5 {
+  min-height: 50px;
+}
+
+.products-grid .card h5 + p {
+  min-height: 80px;
+}
+
 /* raiting & wish  */
 
 .products-grid .card .rating-wish {
@@ -44,7 +52,5 @@
 .products-grid .card .rating-wish .raiting-icon {
   color: orange;
 }
-
-
 
 /* raiting & wish ## */

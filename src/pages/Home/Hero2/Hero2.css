@@ -56,3 +56,8 @@
     min-height: 200px;
   }
 }
+@media (max-width: 525px) {
+  .hero2 .row .col-5 img {
+    min-height: 147px;
+  }
+}

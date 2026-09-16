@@ -7,7 +7,7 @@ import { useContext, useState, useMemo, useEffect } from "react";
 import { ProductContext } from "../../Context/ProductContext";
 import Loading from "../../Components/Loading/Loading";
 import { useSearchParams } from "react-router-dom";
-import { IoArrowDownOutline } from "react-icons/io5";
+import { IoChevronDown } from "react-icons/io5";
 
 export default function CategoryProducts() {
   const { products, error, loading } = useContext(ProductContext);
@@ -145,14 +145,19 @@ export default function CategoryProducts() {
       <div className="d-lg-none">
         <div className="container py-2">
           <button
-            className="btn btn-dark w-100"
+            className="btn btn-dark w-100 text-start"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#categoriesCollapse"
             aria-expanded="false"
             aria-controls="categoriesCollapse"
           >
-            Categories
+            <div className="row">
+              <div className="col">Categories</div>
+              <div className="col text-end">
+                <IoChevronDown />
+              </div>
+            </div>
           </button>
 
           <div className="collapse" id="categoriesCollapse">
@@ -178,14 +183,19 @@ export default function CategoryProducts() {
       <div className="d-lg-none ">
         <div className="container py-2 ">
           <button
-            className="btn btn-dark w-100"
+            className="btn btn-dark w-100 text-start"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#filtersCollapse"
             aria-expanded="false"
             aria-controls="filtersCollapse"
           >
-            Filters
+            <div className="row">
+              <div className="col">Filters</div>
+              <div className="col text-end">
+                <IoChevronDown />
+              </div>
+            </div>
           </button>
 
           <div className="collapse" id="filtersCollapse">

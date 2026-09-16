@@ -13,6 +13,12 @@
   overflow: hidden;
 }
 
+@media (max-width: 400px) {
+  .category-name .col .category h4 {
+    font-size: 17px !important;
+  }
+}
+
 .category-name .col .category:hover {
   transform: translateY(-3px);
 }

@@ -41,6 +41,6 @@
 
 @media (max-width: 525px) {
   .hero .row .col-5 img {
-    min-height: 200px;
+    min-height: 160px;
   }
 }

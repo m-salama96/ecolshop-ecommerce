@@ -20,7 +20,7 @@ export default function Hero2() {
             </p>
             <button
               type="button"
-              className="btn btn-dark rounded-pill"
+              className="btn btn-dark rounded-pill mt-1"
               onClick={() => navigate("/shop")}
             >
               Explore Now

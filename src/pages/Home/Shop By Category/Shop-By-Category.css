@@ -1,6 +1,7 @@
 .shop-by-category .card {
   transition: all 0.3s;
   background-color: var(--pg-color-card);
+  cursor: pointer;
 }
 
 .shop-by-category .card:hover {

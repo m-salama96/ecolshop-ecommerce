@@ -25,6 +25,7 @@
 .shop-by-department .card {
   border: none;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 .shop-by-department .card:hover {

@@ -1,6 +1,7 @@
 .discover .row .col-12 .card {
   border: none;
   transition: all 0.3s;
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {
